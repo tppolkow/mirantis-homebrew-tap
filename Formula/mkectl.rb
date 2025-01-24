@@ -23,7 +23,7 @@ class Mkectl < Formula
   end
 
   test do
-      assert_match "Version: v4.0.1-rc3", shell_output("#{bin}/mkectl version")
+      assert_match "Version: v4.0.1-rc.3", shell_output("#{bin}/mkectl version")
       assert_match "spec.version: v4.0.1-rc.3", shell_output("#{bin}/mkectl init")
   end
 
